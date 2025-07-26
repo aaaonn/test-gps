@@ -123,5 +123,5 @@ func handleGetLastLocation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json") // Set response header to JSON
-	json.NewEncoder(w).Encode(lastLocation)             // Encode the retrieved location as JSON
+	json.NewEncoder(w).Encode(lastLocation)            // Encode the retrieved location as JSON
 }
